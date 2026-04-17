@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: smartsuit-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: smartsuit
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass
+    ports:
+      - "3320:3306"   # ✅ NEW (avoid 3306,3307,3310,3311)
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  app:
+    build: .
+    container_name: smartsuit-app
+    depends_on:
+      - mysql
+    ports:
+      - "8095:8080"   # ✅ NEW (avoid 8080,8090,8100,8011)
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: smartsuit
+      DB_USER: appuser
+      DB_PASS: apppass
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: smartsuit-jenkins
+    user: root
+    ports:
+      - "8096:8080"   # ✅ NEW (avoid 8078)
+      - "50010:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  mysql_data:
+  jenkins_home:
