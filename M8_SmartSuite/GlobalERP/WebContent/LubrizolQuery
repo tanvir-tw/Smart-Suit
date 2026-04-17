@@ -1,0 +1,4 @@
+select distinct(warehouse),alertstatus,status from db_gps.t_warehousedata where warehouse in (select distinct(EndPlace)  from db_gps.t_startedjourney where GPName='Lubrizol ALL')
+
+
+select distinct(branch),toid,tocc from db_gps.t_branchwisemailid where branch in (select distinct(warehouse),alertstatus,status from db_gps.t_warehousedata where warehouse in (select distinct(EndPlace)  from db_gps.t_startedjourney where GPName='Lubrizol ALL'))

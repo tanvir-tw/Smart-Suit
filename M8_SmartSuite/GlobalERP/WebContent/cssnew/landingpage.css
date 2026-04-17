@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Center the row and columns */
+.row {
+    display: flex;
+    justify-content: center;  /* Center columns in the row */
+}
+
+/* Style for each column */
+.col-4 {
+    display: flex;
+    justify-content: center;  /* Horizontally center the card */
+    align-items: center;      /* Vertically center the card */
+}
+
+/* Card styling */
+.card {
+    width: 100%;  /* Take full width of the column */
+    max-width: 300px;  /* Optional: set a max width for cards */
+    margin: 10px;  /* Optional: space between the cards */
+}
+
+.container1 {
+    width: 460px;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.container1 .title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.container1 .price {
+    color: #FF6B6B;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.container1 span {
+    font-size: 1.2rem;
+}
+
+.container1 .description {
+    color: #3b3b3b;
+    font-size: 1.1rem;
+    margin: 20px 0 20px;
+}
+
+.container1 .offer {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+
+.ribbon-wrap {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    pointer-events: none;
+}
+
+.ribbon {
+    width: 230px;
+    font-size: 0.918rem;
+    text-align: center;
+    padding: 8px 0;
+    background: #4a98f7;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17px;
+    top: 29%;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 230px;
+    width: 250px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+a {
+    color: dodgerblue;         /* Set the text color to black */
+    text-decoration: none; /* Remove the underline */
+}
+
+/* Optional: You can also add a hover effect */
+a:hover {
+    color: #555; /* Slightly darker shade of black or gray for hover effect */
+    text-decoration: none; /* Ensure the underline is still removed on hover */
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    border: inset;
+}

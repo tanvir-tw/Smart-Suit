@@ -1,0 +1,103 @@
+@charset "UTF-8";
+   .btn.btn-danger.btn2 a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+  }
+  
+  .btn.btn-danger.btn2 {
+border:none;
+    background-color:deepskyblue;
+  }
+  
+    .container {
+            margin-top: 1%;
+              margin-bottom: 1%;
+  
+        }
+        
+.card {
+            border:none;
+        }
+        
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-family: 'Arial';
+        }
+
+   
+        .btn {
+    line-height: 1;
+    Background-color:#1582AB;
+    color:white;
+        }
+                /* General Styles for Input Fields */
+.form-control {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+/*     padding: 10px 5px;
+ */    margin-bottom: 10px;
+    background-color: transparent;
+    position: relative;
+    font-size:12px;
+}
+ .form-control,.form-select{
+                    font-size:12px;
+        
+        } 
+/* Floating Label Styles */
+.input-container {
+    position: relative;
+/*     margin-bottom: 20px;
+ */}
+
+.floating-label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 14px;
+    color: #888;
+    transition: all 0.3s ease;
+}
+
+.floating-input:focus + .floating-label,
+.floating-input:not(:placeholder-shown) + .floating-label {
+    top: -15px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+/* Label Styles for Error Messages */
+label[for] {
+    display: block;
+    font-size: 12px;
+}
+
+label[for] font {
+    font-family: Arial;
+    font-size: 12px;
+    color: red;
+}
+
+.floating-input:focus {
+    border-bottom: 2px solid #007bff; /* Blue border when focused */
+}
+
+.floating-input:invalid {
+    border-bottom: 2px solid red; /* Red border for invalid inputs */
+}
+
+/* Focus Effects */
+.floating-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+        label{
+        font-weight: bolder;
+        font-size:12px;
+        color:#007bff;
+        }

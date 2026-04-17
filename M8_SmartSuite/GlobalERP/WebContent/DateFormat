@@ -1,0 +1,26 @@
+Current :-
+
+String dt1 = new SimpleDateFormat("yyyy-MM-dd")
+        .format(new SimpleDateFormat("dd-MMM-yyyy")
+                .parse(dtoday));
+
+String dt1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+        .format(new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss")
+                .parse(dtoday));
+
+
+Modified :-
+
+String dt1 = new SimpleDateFormat("dd-MMM-yyyy")
+        .format(new SimpleDateFormat("yyyy-MM-dd")
+                .parse(dtoday));
+
+String dt1 = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss")
+        .format(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                .parse(dtoday));
+
+
+
+
+insert into db_GlobalERP.100000ContractorProfileMaster(ContractorId,Department,Designation,ContractorOfficialNumber,ContractorOfficialEmail,ContractStartDate,ContractEndDate,ContractorWeekOff,EntryBy,EntryDate) values ('','Softawre','Developer','1234567890','w_tam@gmail.com','2018-10-04','2018-10-04','7','Washim','2018-10-04 11:54:49')
+

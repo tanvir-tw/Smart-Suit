@@ -1,0 +1,11 @@
+Ledger Details--
+
+SELECT * FROM 100000salesinv_items where InvoiceNo='16906'
+SELECT * FROM 100000tbl_digitim_make26  WHERE ItemCode='24' 
+st> 0.0SELECT * FROM 100000tbl_digitim_make26  WHERE ItemCode='2319' 
+st> 0.0SELECT * FROM 100000tbl_digitim_make26  WHERE ItemCode='2246' 
+st> 0.0SELECT * FROM 100000tbl_digitim_make26  WHERE ItemCode='2290' 
+
+
+Service Charge 14%
+AVL 2000 A

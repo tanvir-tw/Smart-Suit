@@ -1,0 +1,120 @@
+@charset "UTF-8";
+   table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>th.sorting_asc,
+         table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting_asc_disabled, 
+         table.dataTable thead>tr>th.sorting_desc_disabled, table.dataTable thead>tr>td.sorting, 
+         table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, 
+         table.dataTable thead>tr>td.sorting_asc_disabled,
+         table.dataTable thead>tr>td.sorting_desc_disabled {
+        background-color:#212529;
+        color:#ffffff;
+        text-align: center;
+        }
+        
+ .btn.btn-danger.btn2 a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+  }
+  
+label{
+  font-size:11px;
+  }
+  
+.form-select,tbody{
+  font-size:12px;
+
+}
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 11px;
+}
+    #button, #button:hover{
+    line-height: 1;
+        font-size: 15px;
+        background-color:#1582AB;
+    }
+    
+thead{
+  font-size:12px;
+  }
+  td{
+  font-size:12px;
+  }
+  table.dataTable tbody th, table.dataTable tbody td {
+    padding: 2px 3px;
+}
+table.dataTable tbody td {
+    padding: 0px 10px;
+}
+table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting_asc_disabled, table.dataTable thead>tr>th.sorting_desc_disabled, table.dataTable thead>tr>td.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting_asc_disabled, table.dataTable thead>tr>td.sorting_desc_disabled {
+    background-color: #1582AB;
+    color: white;
+}
+
+
+div.dataTables_wrapper {
+    position: relative;
+    font-size: small;
+}
+
+div.dt-button-collection button.dt-button:first-child, div.dt-button-collection div.dt-button:first-child, div.dt-button-collection a.dt-button:first-child {
+    margin-top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+div.dt-button-collection button.dt-button, div.dt-button-collection div.dt-button, div.dt-button-collection a.dt-button {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    float: none;
+    margin: 4px 0 2px 0;
+    text-align:center;
+}
+div.dt-button-collection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 4px 4px 2px 4px;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: white;
+    overflow: hidden;
+    z-index: 2002;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+button.dt-button:hover{
+        background-color:#1582AB;
+color:black;
+}
+td a{
+	text-decoration: none;
+	
+}
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+ .col-width-4 {
+    width: 4%;
+  }
+  
+.dt-buttons .btn-outline-secondary{
+	
+	margin-top:3px;
+}
+  
